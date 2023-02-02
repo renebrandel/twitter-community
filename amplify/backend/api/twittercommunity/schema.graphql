@@ -1,0 +1,8 @@
+type Tweet @model @auth(rules: [
+  { allow: owner, operations: [create, delete] },
+  { allow: groups, groupsField: "community", operations: [read] }
+]) {
+  content: String!
+  community: String!
+}
+
