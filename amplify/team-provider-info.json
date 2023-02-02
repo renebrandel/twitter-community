@@ -1,5 +1,5 @@
 {
-  "dev": {
+  "main": {
     "awscloudformation": {
       "AuthRoleName": "amplify-twittercommunity-dev-184900-authRole",
       "UnauthRoleArn": "arn:aws:iam::691460774223:role/amplify-twittercommunity-dev-184900-unauthRole",
