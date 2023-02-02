@@ -12,17 +12,6 @@ export function PostPanel() {
 
   useEffect(() => {
     fetchTweets();
-
-    const sub = API.graphql({
-      query: onCreateTweet
-    }).subscribe({
-      next: ({ value }) => {
-        console.log(value)
-        setTweets(tweets => [value.data.onCreateTweet, ...tweets])
-      }
-    });
-
-    return () => { sub.unsubscribe() }
   }, [user]);
 
   async function fetchTweets() {

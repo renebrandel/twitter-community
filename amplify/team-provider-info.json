@@ -14,8 +14,7 @@
     },
     "categories": {
       "api": {
-        "twittercommunity": {},
-        "AdminQueries": {}
+        "twittercommunity": {}
       },
       "auth": {
         "twittercommunity5cbac946": {}
@@ -25,10 +24,6 @@
           "GROUP": "Everyone",
           "deploymentBucketName": "amplify-twittercommunity-dev-184900-deployment",
           "s3Key": "amplify-builds/twittercommunity5cbac946PostConfirmation-304a70436a4b4b643159-build.zip"
-        },
-        "AdminQueriescbffee1f": {
-          "deploymentBucketName": "amplify-twittercommunity-dev-184900-deployment",
-          "s3Key": "amplify-builds/AdminQueriescbffee1f-61746f2f425764337031-build.zip"
         }
       }
     }

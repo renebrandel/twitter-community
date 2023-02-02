@@ -7,17 +7,9 @@ export function GroupsPanel() {
   const { refreshGroups, availableGroups } = useContext(CommunityContext)
 
   async function handleCreateGroupClick() {
-    await createAndJoinGroup(window.prompt('Group Name?'))
-    refreshGroups()
   }
 
   async function handleGroupClick(groupName, joined) {
-    if (joined) {
-      await leaveGroup(groupName)
-    } else {
-      await joinGroup(groupName)
-    }
-    refreshGroups();
   }
 
   return <Flex direction={'column'}>
